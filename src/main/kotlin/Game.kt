@@ -36,7 +36,7 @@ class Game(tileBoard: TileBoard, private val numPlayers: Int) {
             }
 
             // player failed
-            board.breakRow(currentPosition)
+//            board.breakRow(currentPosition) // not used in standard game, only variant
             knownMoves.add(oppositeMove(move))
         }
 
