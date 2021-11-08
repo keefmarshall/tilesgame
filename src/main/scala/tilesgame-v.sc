@@ -13,6 +13,9 @@ object TilesGameVariant {
       var position = 0
       var alive = true
       while (position < boardSize && alive) {
+        // Player succeeds:
+        // if odds >= 0.5 OR
+        // if the bad tile is already broken so can be avoided
         if (boardState(position) || Math.random() >= 0.5) {
           // player succeeds
           position += 1

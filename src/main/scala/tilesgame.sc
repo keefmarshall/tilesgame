@@ -7,6 +7,7 @@ object TilesGame {
     // need to find the first successful player
     while (currentPosition < boardSize && currentPlayer <= numPlayers) {
       currentPosition += 1
+      // Player fails if < 0.5, move to next player:
       if (Math.random() < 0.5) currentPlayer += 1
     }
 
